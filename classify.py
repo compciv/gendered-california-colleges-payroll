@@ -7,8 +7,8 @@ CLASSIFIED_DIR = join(DATA_DIR, 'classified')
 makedirs(CLASSIFIED_DIR, exist_ok=True)
 DATA_FILE_BASENAMES = ['2014-university-system.csv', '2014-community-colleges.csv']
 
-# let's create a get_usable_name function:
-def get_usable_name(namestr):
+# let's create a extract_usable_name function:
+def extract_usable_name(namestr):
     nameparts = namestr.split(', ', 1)
     for nx in nameparts[-1].split(' '):
         if '.' not in nx:
@@ -50,7 +50,7 @@ for fname in DATA_FILE_BASENAMES:
         if "Not provided" in employee_name:
             pass
         else:
-            usablename = get_usable_name(employee_name)
+            usablename = extract_usable_name(employee_name)
             xresult = detect_gender(usablename)
             row['gender'] = xresult['gender']
             row['ratio'] = xresult['ratio']
