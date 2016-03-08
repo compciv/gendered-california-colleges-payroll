@@ -1,3 +1,13 @@
+# Gender analysis of Califorinia college payroll
+
+
+## Preliminary findings
+
+- More women then men overall as employees
+- More men then women in high leadership positions (deans and presidents)
+- Under $250,000 in salary, women maintain parity/majority with men in salaried jobs
+- Above $250,000, women are outnumbered 2 to 1
+- Way fewer people in the community colleges system make $250K or above.
 
 
 
@@ -6,6 +16,7 @@
 
 # The scripts
 
+TKTK TODOTOD
 
 ## fetch_gender_data.py
 
